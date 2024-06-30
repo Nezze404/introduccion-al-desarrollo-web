@@ -93,18 +93,19 @@ main {
 }
 
 #hero {
-  height: 80vh;
+  height: 90vh;
   background-color: #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0;
+  margin:0;
+  padding:2rem 0;
 
   h1 {
     font-size: 3rem;
-    margin: 1.5rem 0;
+    margin: 1.5rem 0rem;
   }
 
   h4 {
@@ -307,7 +308,7 @@ footer {
   width: 50%;
 }
 
-aside {
+#navegacion_lateral {
   position: fixed;
   top: 0;
   right: 0;
@@ -343,6 +344,29 @@ aside {
     align-self: flex-end;
   }
 }
+
+.boton_flotante__contenedor{
+  background-color: #000;
+  display:flex ;
+  flex-direction: column;
+  align-items: center;
+  height:1rem;
+  width:1rem;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  z-index:3;
+  bottom: 0;
+  right: 0;
+}
+
+.boton_flotante{
+  background-color:none
+}
+
 
 ::-webkit-scrollbar {
   width: 15px;
